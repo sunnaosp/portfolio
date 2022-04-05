@@ -5,7 +5,7 @@ function Header() {
     return (
         <div className="flex flex-row items-center w-full px-20 bg-secondary border-b border-brand">
             <div className="flex-1">
-                <Link to={"/"}><img src="/SignatureLogo.svg" /></Link>
+                <Link to={"/"}><img src="/signaturelogo.svg" /></Link>
             </div>
             <div className="flex flex-row gap-5">
                 <ProjectLink to={"/category/uxdesign"}>UX design</ProjectLink>
