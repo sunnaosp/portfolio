@@ -5,7 +5,29 @@ function Project() {
     const { id = "" } = useParams();
     const [data, state] = usePrismicDocumentByUID("project", id);
 
-    return (<div>{data?.data.project_name[0].text}</div>)
+    return (
+        <div className="flex-row">
+            <div className="flex row-direction-row">
+                <h2>{data?.data.project_name[0].text}</h2>
+
+            </div>
+            <div className="flex row bg-green-500">
+                <h2>{data?.data.project_name[0].text}</h2>
+
+            </div>
+            <div className="flex row  bg-red-500">
+                <h2>{data?.data.project_name[0].text}</h2>
+
+            </div>
+            <div className="flex row  bg-blue-500">
+                <h2>{data?.data.project_name[0].text}</h2>
+
+            </div>
+            <div className="flex row  bg-orange-500">
+                <h2>{data?.data.project_name[0].text}</h2>
+
+            </div>
+        </div>)
 }
 
 export default Project;

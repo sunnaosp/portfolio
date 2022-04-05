@@ -4,7 +4,6 @@ import { Link, useParams } from "react-router-dom";
 function ProjectCategory() {
     const { id = "" } = useParams();
     const [data, state] = usePrismicDocumentByUID('ux_design_page', id);
-    console.log(data?.data);
     return (<>
         {
             state?.state === 'loaded' ?
