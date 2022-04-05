@@ -1,9 +1,9 @@
 import { usePrismicDocumentByID, usePrismicDocumentByUID, usePrismicDocumentsByType } from '@prismicio/react';
 import React from 'react';
-import DribbbleIcon_white from '../../../public/dribbble_white.svg'
-import EmailIcon_white from '../../../public/email_white.svg'
-import LinkedinIcon_white from '../../../public/linkedin_white.svg'
-import CVIcon_white from '../../../public/cv_white.svg'
+import DribbbleIcon_white from '../../dribbble_white.svg'
+import EmailIcon_white from '../../email_white.svg'
+import LinkedinIcon_white from '../../linkedin_white.svg'
+import CVIcon_white from '../../cv_white.svg'
 import { Link } from 'react-router-dom';
 
 function Home() {

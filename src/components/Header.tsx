@@ -1,5 +1,5 @@
 import React from "react";
-import SignatureLogo from '../../public/signatureLogo.svg'
+import SignatureLogo from '../signatureLogo.svg'
 import { Link, NavLink } from "react-router-dom";
 
 function Header() {
