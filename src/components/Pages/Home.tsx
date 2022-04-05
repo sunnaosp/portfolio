@@ -20,7 +20,7 @@ function Home({ data, state }: { data?: Record<string, any>, state: string }) {
 }
 
 const Hero = ({ data }: { data?: Record<string, any> }) => {
-  return <div className='flex flex-row w-full gap-14'>
+  return <div className='flex flex-row w-full gap-14 min-h-[500px]'>
     <div className="flex flex-col flex-1">
       <h1 className='text-6xl font-brand pb-16' dangerouslySetInnerHTML={{ __html: data?.title[0].text }} ></h1>
       <div className='border-t-2 border-brand max-w-min flex flex-row pt-4 gap-4'>
@@ -42,7 +42,7 @@ const Icon = ({ children, to, color }: { children: React.ReactNode, to: string, 
 
 
 const SelectedWorks = ({ items = [9] }: { items: any[] }) => {
-  return <div className='flex flex-col items-center justify-center gap-6'>
+  return <div className='flex flex-col items-center justify-center gap-16 min-h-[880px]'>
     <h2 className='font-brand text-3xl flex items-center justify-center'>Other selected work</h2>
     <div className='flex flex-row flex-wrap max-w-[831px]'>
       {items.map(i => {

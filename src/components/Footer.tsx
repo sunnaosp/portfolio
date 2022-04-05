@@ -1,7 +1,6 @@
 import React from "react";
 
 function Footer({ data }: { data?: Record<string, any> }) {
-    console.log(data?.cv)
     return (<div className="font-brand text-2xl bg-brand h-24 flex flex-row items-center justify-center gap-4 py-4 w-full">
         <Icon to={data?.linkedin?.url}><img src="/linkedin.svg" alt="Check out my linkedin" /></Icon>
         <Icon to={data?.cv?.url}><img src="/cv.svg" alt="View my cv" /></Icon>
