@@ -1,0 +1,1 @@
+import { PrismicProvider } from "@prismicio/react";
