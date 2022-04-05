@@ -1,0 +1,10 @@
+
+export { default as CVIcon } from './cv.svg'
+export { default as cvWhiteIcon } from './cv_white.svg'
+export { default as DribbbleWhiteIcon } from './dribbble_white.svg'
+export { default as DribbbleIcon } from './dribbble.svg'
+export { default as LinkedinWhiteIcon } from './linkedin_white.svg'
+export { default as LinkedinIcon } from './linkedin.svg'
+export { default as SignatureLogo } from './SignatureLogo.svg'
+export { default as EmailIcon } from './email.svg'
+export { default as EmailIconWhite } from './email_white.svg'
