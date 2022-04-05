@@ -2,10 +2,10 @@ import React from "react";
 
 function Footer() {
     return (<div className="font-brand text-2xl bg-brand h-24 flex flex-row items-center justify-center gap-4 py-4 w-full">
-        <Icon to="https://www.linkedin.com/in/sunna-%C3%B6sp-%C3%BE%C3%B3rsd%C3%B3ttir-40491472/"><img src="/linkedin.svg" alt="An SVG of an eye" /></Icon>
-        <Icon to="http://mbl.is"><img src="/cv.svg" alt="An SVG of an eye" /></Icon>
-        <Icon to="http://mbl.is"><img src="/email.svg" alt="An SVG of an eye" /></Icon>
-        <Icon to="https://dribbble.com/sunnaosp"><img src="/dribbble.svg" alt="An SVG of an eye" /></Icon>
+        <Icon to="https://www.linkedin.com/in/sunna-%C3%B6sp-%C3%BE%C3%B3rsd%C3%B3ttir-40491472/"><img src="/linkedin.svg" alt="Check out my linkedin" /></Icon>
+        <Icon to="http://mbl.is"><img src="/cv.svg" alt="View my cv" /></Icon>
+        <Icon to="http://mbl.is"><img src="/email.svg" alt="Send me an email" /></Icon>
+        <Icon to="https://dribbble.com/sunnaosp"><img src="/dribbble.svg" alt="Browse my works on dribble" /></Icon>
     </div>)
 }
 

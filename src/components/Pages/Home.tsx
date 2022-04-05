@@ -27,10 +27,10 @@ const Hero = () => {
     <div className="flex flex-col flex-1">
       <h1 className='text-6xl font-brand pb-16' dangerouslySetInnerHTML={{ __html: frontPageData?.title[0].text }} ></h1>
       <div className='border-t-2 border-brand max-w-min flex flex-row pt-4 gap-4'>
-        <Icon to="https://www.linkedin.com/in/sunna-%C3%B6sp-%C3%BE%C3%B3rsd%C3%B3ttir-40491472/" color='bg-linkedIn'><img src="/linkedin_white.svg" alt="An SVG of an eye" /></Icon>
-        <Icon to="http://mbl.is" color='bg-cv'><img src="/cv_white.svg" alt="An SVG of an eye" /></Icon>
-        <Icon to="http://mbl.is" color='bg-email'><img src="/email_white.svg" alt="An SVG of an eye" /></Icon>
-        <Icon to="https://dribbble.com/sunnaosp" color='bg-dribbble'><img src="/dribbble_white.svg" alt="An SVG of an eye" /></Icon>
+        <Icon to="https://www.linkedin.com/in/sunna-%C3%B6sp-%C3%BE%C3%B3rsd%C3%B3ttir-40491472/" color='bg-linkedIn'><img src="/linkedin_white.svg" alt="Check out my linkedin" /></Icon>
+        <Icon to="http://mbl.is" color='bg-cv'><img src="/cv_white.svg" alt="View my cv" /></Icon>
+        <Icon to="http://mbl.is" color='bg-email'><img src="/email_white.svg" alt="Send me an email" /></Icon>
+        <Icon to="https://dribbble.com/sunnaosp" color='bg-dribbble'><img src="/dribbble_white.svg" alt="Browse my works on dribble" /></Icon>
       </div>
     </div>
 
