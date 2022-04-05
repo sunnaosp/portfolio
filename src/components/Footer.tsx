@@ -1,8 +1,8 @@
 import React from "react";
-import { ReactComponent as EmailIcon } from '../../public/email.svg'
-import { ReactComponent as LinkedinIcon } from '../../public/linkedin.svg'
-import { ReactComponent as CVIcon } from '../../public/cv.svg'
-import { ReactComponent as DribbbleIcon } from '../../public/dribbble.svg'
+import EmailIcon from '../../public/email.svg'
+import LinkedinIcon from '../../public/linkedin.svg'
+import CVIcon from '../../public/cv.svg'
+import DribbbleIcon from '../../public/dribbble.svg'
 
 function Footer() {
     return (<div className="font-brand text-2xl bg-brand h-24 flex flex-row items-center justify-center gap-4 py-4 w-full">

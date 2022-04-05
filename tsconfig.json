@@ -15,7 +15,7 @@
     "isolatedModules": true,
     "noEmit": true,
     "jsx": "react-jsx",
-    "types": ["vite-plugin-svgr/client"],
+    "types": [],
   },
   "include": ["src", "public/svgImports.d.ts"],
   "references": [{ "path": "./tsconfig.node.json" }]
