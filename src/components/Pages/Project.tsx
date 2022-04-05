@@ -3,8 +3,9 @@ import { useParams } from "react-router-dom";
 
 function Project() {
     const { id = "" } = useParams();
+    // get the project data
     const [data, state] = usePrismicDocumentByUID("project", id);
-    console.log(data?.data)
+    //Render the project sections with the data.
     return (
         <div className="flex-row">
             <div className="flex justify-center min-h-[600px]">

@@ -1,6 +1,7 @@
 import React from "react";
 
 function Footer({ data }: { data?: Record<string, any> }) {
+    // Icons and links for the footer with data from the app
     return (<div className="font-brand text-2xl bg-brand h-24 flex flex-row items-center justify-center gap-4 py-4 w-full">
         <Icon to={data?.linkedin?.url}><img src="/linkedin.svg" alt="Check out my linkedin" /></Icon>
         <Icon to={data?.cv?.url}><img src="/cv.svg" alt="View my cv" /></Icon>
@@ -10,6 +11,7 @@ function Footer({ data }: { data?: Record<string, any> }) {
 }
 
 const Icon = ({ children, to }: { children: React.ReactNode, to: string }) => {
+    // clickable links for the footer
     return <a href={to}><div className="bg-secondary rounded-full h-[40px] w-[40px] flex items-center justify-center ">{children}</div></a>
 }
 

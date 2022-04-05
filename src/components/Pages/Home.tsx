@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import * as prismicT from '@prismicio/types';
 
 function Home({ data, state }: { data?: Record<string, any>, state: string }) {
-
+  // we get the front page data from the app. if we have finished loading we render the content
   return (
     <div className="">
       {state !== 'loaded' ?
@@ -20,6 +20,7 @@ function Home({ data, state }: { data?: Record<string, any>, state: string }) {
 }
 
 const Hero = ({ data }: { data?: Record<string, any> }) => {
+  // render the hero section with the banner image and links from cms
   return <div className='flex flex-row w-full gap-14 min-h-[500px]'>
     <div className="flex flex-col flex-1">
       <h1 className='text-6xl font-brand pb-16' dangerouslySetInnerHTML={{ __html: data?.title[0].text }} ></h1>
@@ -37,11 +38,13 @@ const Hero = ({ data }: { data?: Record<string, any> }) => {
 
 
 const Icon = ({ children, to, color }: { children: React.ReactNode, to: string, color: string }) => {
+  // a single icon with a link
   return <a href={to}><div className={"rounded-full h-[55px] w-[55px] flex items-center justify-center " + color} > {children}</div></a >
 }
 
 
 const SelectedWorks = ({ items = [9] }: { items: any[] }) => {
+  // list all the project sections from the cms
   return <div className='flex flex-col items-center justify-center gap-16 min-h-[880px]'>
     <h2 className='font-brand text-3xl flex items-center justify-center'>Other selected work</h2>
     <div className='flex flex-row flex-wrap max-w-[831px]'>
@@ -54,6 +57,7 @@ const SelectedWorks = ({ items = [9] }: { items: any[] }) => {
 }
 
 const Project = ({ projectId }: { projectId: string }) => {
+  // render a single block for each project with a link and a hover effect
   const [data, state] = usePrismicDocumentByUID("project", projectId);
   return (<>
     {
