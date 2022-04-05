@@ -1,12 +1,11 @@
 import React from "react";
-import SignatureLogo from '../signatureLogo.svg'
 import { Link, NavLink } from "react-router-dom";
 
 function Header() {
     return (
         <div className="flex flex-row items-center w-full px-20 bg-secondary border-b border-brand">
             <div className="flex-1">
-                <Link to={"/"}><SignatureLogo /></Link>
+                <Link to={"/"}><img src="/signatureLogo.svg" alt="An SVG of an eye" /></Link>
             </div>
             <div className="flex flex-row gap-5">
                 <ProjectLink to={"/category/uxdesign"}>UX design</ProjectLink>

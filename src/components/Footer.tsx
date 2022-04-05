@@ -1,15 +1,11 @@
 import React from "react";
-import EmailIcon from '../email.svg'
-import LinkedinIcon from '../linkedin.svg'
-import CVIcon from '../cv.svg'
-import DribbbleIcon from '../dribbble.svg'
 
 function Footer() {
     return (<div className="font-brand text-2xl bg-brand h-24 flex flex-row items-center justify-center gap-4 py-4 w-full">
-        <Icon to="https://www.linkedin.com/in/sunna-%C3%B6sp-%C3%BE%C3%B3rsd%C3%B3ttir-40491472/"><LinkedinIcon /></Icon>
-        <Icon to="http://mbl.is"><CVIcon /></Icon>
-        <Icon to="http://mbl.is"><EmailIcon /></Icon>
-        <Icon to="https://dribbble.com/sunnaosp"><DribbbleIcon /></Icon>
+        <Icon to="https://www.linkedin.com/in/sunna-%C3%B6sp-%C3%BE%C3%B3rsd%C3%B3ttir-40491472/"><img src="/linkedin.svg" alt="An SVG of an eye" /></Icon>
+        <Icon to="http://mbl.is"><img src="/cv.svg" alt="An SVG of an eye" /></Icon>
+        <Icon to="http://mbl.is"><img src="/email.svg" alt="An SVG of an eye" /></Icon>
+        <Icon to="https://dribbble.com/sunnaosp"><img src="/dribbble.svg" alt="An SVG of an eye" /></Icon>
     </div>)
 }
 

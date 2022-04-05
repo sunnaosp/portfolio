@@ -1,9 +1,5 @@
 import { usePrismicDocumentByID, usePrismicDocumentByUID, usePrismicDocumentsByType } from '@prismicio/react';
 import React from 'react';
-import DribbbleIcon_white from '../../dribbble_white.svg'
-import EmailIcon_white from '../../email_white.svg'
-import LinkedinIcon_white from '../../linkedin_white.svg'
-import CVIcon_white from '../../cv_white.svg'
 import { Link } from 'react-router-dom';
 
 function Home() {
@@ -31,10 +27,10 @@ const Hero = () => {
     <div className="flex flex-col flex-1">
       <h1 className='text-6xl font-brand pb-16' dangerouslySetInnerHTML={{ __html: frontPageData?.title[0].text }} ></h1>
       <div className='border-t-2 border-brand max-w-min flex flex-row pt-4 gap-4'>
-        <Icon to="https://www.linkedin.com/in/sunna-%C3%B6sp-%C3%BE%C3%B3rsd%C3%B3ttir-40491472/" color='bg-linkedIn'><LinkedinIcon_white /></Icon>
-        <Icon to="http://mbl.is" color='bg-cv'><CVIcon_white /></Icon>
-        <Icon to="http://mbl.is" color='bg-email'><EmailIcon_white /></Icon>
-        <Icon to="https://dribbble.com/sunnaosp" color='bg-dribbble'><DribbbleIcon_white /></Icon>
+        <Icon to="https://www.linkedin.com/in/sunna-%C3%B6sp-%C3%BE%C3%B3rsd%C3%B3ttir-40491472/" color='bg-linkedIn'><img src="/linkedin_white.svg" alt="An SVG of an eye" /></Icon>
+        <Icon to="http://mbl.is" color='bg-cv'><img src="/cv_white.svg" alt="An SVG of an eye" /></Icon>
+        <Icon to="http://mbl.is" color='bg-email'><img src="/email_white.svg" alt="An SVG of an eye" /></Icon>
+        <Icon to="https://dribbble.com/sunnaosp" color='bg-dribbble'><img src="/dribbble_white.svg" alt="An SVG of an eye" /></Icon>
       </div>
     </div>
 
