@@ -51,7 +51,7 @@ const Project = ({ projectId, seat }: { projectId: string, seat: number }) => {
                 (
                     <Link to={`/project/${projectId}`}>
                         <div className="flex items-center justify-center transition-colors" style={{ backgroundColor: backgroundColor, width: width, height: height }}>
-                            <div className='opacity-0  flex items-end justify-center hover:opacity-100 hover:bg-opacity-50 absolute bg-black' style={{ width: width, height: height }}>
+                            <div className='opacity-0 flex items-end justify-center hover:opacity-100 hover:bg-opacity-50 absolute bg-black' style={{ width: width, height: height }}>
                                 <p className='flex text-3xl text-white mb-8'>
                                     {data?.data.project_name[0]?.text}
                                 </p>

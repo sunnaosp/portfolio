@@ -30,8 +30,6 @@ function AppContent() {
                 <Routes>
                     <Route path="/" element={<Home data={data?.data} state={state?.state} />} />
                     <Route path="category/:id" element={<ProjectCategory />} />
-                    <Route path="category/:id" element={<ProjectCategory />} />
-                    <Route path="category/:id" element={<ProjectCategory />} />
                     <Route path="project/:id" element={<Project />} />
                 </Routes>
             </div>

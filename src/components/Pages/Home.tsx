@@ -1,9 +1,8 @@
 import { usePrismicDocumentByID, usePrismicDocumentByUID, usePrismicDocumentsByType } from '@prismicio/react';
 import React from 'react';
 import { Link } from 'react-router-dom';
-import * as prismicT from '@prismicio/types';
 
-function Home({ data, state }: { data?: Record<string, any>, state: string }) {
+function Home({ data, state }: { data?: Record<string, any>, state?: string }) {
   // we get the front page data from the app. if we have finished loading we render the content
   return (
     <div className="">
@@ -46,7 +45,7 @@ const Icon = ({ children, to, color }: { children: React.ReactNode, to: string, 
 const SelectedWorks = ({ items = [9] }: { items: any[] }) => {
   // list all the project sections from the cms
   return <div className='flex flex-col items-center justify-center gap-16 min-h-[880px]'>
-    <h2 className='font-brand text-3xl flex items-center justify-center'>Other selected work</h2>
+    <h2 className='font-brand text-4xl flex items-center justify-center'>Other selected work</h2>
     <div className='flex flex-row flex-wrap max-w-[831px]'>
       {items.map(i => {
         return <Project projectId={i.featured_project.uid} />

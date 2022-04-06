@@ -13,19 +13,19 @@ function Project() {
             </div>
             <div className="flex py-10">
                 <div className="pr-8 flex items-center justify-center gap-2">
-                    <img src="/dribbble.svg" className="flex" alt="My role in this project" />
+                    <img src="/role.svg" className="flex" alt="My role in this project" />
                     <p>Role: {data?.data?.project_role[0]?.text}</p>
                 </div>
                 <div className="pr-8 flex items-center justify-center gap-2">
-                    <img src="/dribbble.svg" className="flex" alt="My role in this project" />
+                    <img src="/clock.svg" className="flex" alt="My role in this project" />
                     <p>Timeline: {data?.data?.project_timeline[0]?.text}</p>
                 </div>
                 <div className="pr-8 flex items-center justify-center gap-2">
-                    <img src="/dribbble.svg" className="flex" alt="My role in this project" />
+                    <img src="/tools.svg" className="flex" alt="My role in this project" />
                     <p>Tools: {data?.data?.project_role[0]?.text}</p>
                 </div>
                 <div className="flex-auto items-center flex gap-2">
-                    <img src="/dribbble.svg" className="flex" alt="My role in this project" />
+                    <img src="/link.svg" className="flex" alt="My role in this project" />
                     <a href={data?.data?.project_link.url}>{data?.data?.project_name[0]?.text}</a>
                 </div>
             </div>
