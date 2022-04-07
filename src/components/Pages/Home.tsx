@@ -23,7 +23,7 @@ const Hero = ({ data }: { data?: Record<string, any> }) => {
   return <div className='flex flex-row w-full gap-14 min-h-[500px]'>
     <div className="flex flex-col flex-1">
       <h1 className='text-6xl font-brand pb-16' dangerouslySetInnerHTML={{ __html: data?.title[0].text }} ></h1>
-      <div className='border-t-2 border-brand max-w-min flex flex-row pt-4 gap-4'>
+      <div className='border-t-2 border-brand500 max-w-min flex flex-row pt-4 gap-4'>
         <Icon to={data?.linkedin?.url} color='bg-linkedIn'><img src="/linkedin_white.svg" alt="Check out my linkedin" /></Icon>
         <Icon to={data?.cv?.url} color='bg-cv'><img src="/cv_white.svg" alt="View my cv" /></Icon>
         <Icon to={data?.email_link[0].text} color='bg-email'><img src="/email_white.svg" alt="Send me an email" /></Icon>

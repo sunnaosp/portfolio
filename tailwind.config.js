@@ -9,6 +9,7 @@ module.exports = {
     extend: {
       colors: {
         brand: "#3B2C35",
+        brand500: "#D9CEC4",
         secondary: "#FCF6F0",
         linkedIn: "#0A66C2",
         cv: "#4C7CEC",

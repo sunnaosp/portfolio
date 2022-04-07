@@ -3,7 +3,7 @@ import { Link, NavLink } from "react-router-dom";
 
 function Header() {
     return (
-        <div className="flex flex-row items-center w-full px-20 bg-secondary border-b border-brand">
+        <div className="flex flex-row items-center w-full px-20 bg-secondary border-b border-brand500">
             <div className="flex-1">
                 <Link to={"/"}><img src="/signaturelogo.svg" /></Link>
             </div>
